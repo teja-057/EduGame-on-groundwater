@@ -55,7 +55,7 @@ document.getElementById('register').addEventListener('submit', function(event) {
       sessionStorage.setItem('user', JSON.stringify(data));
       window.location.href = 'ProfilePage.html'; // Redirect to Profile Page
   })
-  .catch(error => console.error('Error:', error));
+  .catch(alert("Registration failed! Please Try again"));
 });
 
 // Login Form Submission
@@ -78,5 +78,6 @@ document.getElementById('login').addEventListener('submit', function(event) {
       sessionStorage.setItem('user', JSON.stringify(data));
       window.location.href = 'ProfilePage.html'; // Redirect to Profile Page
   })
-  .catch(error => console.error('Error:', error));
+  //.catch(error => console.error('Error:', error));
+  .catch(alert("Please enter correct credentials!"));
 });
